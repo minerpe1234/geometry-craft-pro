@@ -1,6 +1,5 @@
 <html>
 <head>
-    <meta name="google-site-verification" content="2ONtLe-C22POhmyJxRbpPYVIIljxmJNhTreVvrEyouM" />
 <style>
   body {
     background-color: #f0f0f0;
@@ -46,14 +45,19 @@
 <body>
 <div class="container">
 <h1 class="title">Скачайте мою первую игру</h1>
-<h2 class="subtitle">всё безопасно, можете проверить на virustotal</h2>
-<button onclick="window.location='https://drive.google.com/uc?id=1riHJb6PYdoEPMQVfDANTw61gmxic4hZj&export=download'">Скачать</button>
+<h2 class="subtitle">всё безопастно, можете проверить</h2>
+<button class="button" id="download">Скачать</button>
 <button class="button" id="check">Проверить</button>
 <div class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eLr_3UAJqMc" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <script>
+  var download = document.getElementById("download");
+  download.addEventListener("click", function() {
+    window.open("https://drive.google.com/file/d/1riHJb6PYdoEPMQVfDANTw61gmxic4hZj/view", "_blank");
+  });
+
   var check = document.getElementById("check");
   check.addEventListener("click", function() {
     window.open("https://www.virustotal.com/gui/file/cf3c2c2c125ce9e31e8afc6113037e0f45b37f0b143e01f892f02f0dbff2e2d5?nocache=1", "_blank");
